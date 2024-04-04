@@ -2,7 +2,7 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-  "title": "Novo Evento 2",
+  "title": "Novo Evento 3",
   "details": null,
   "maximumAttendees": 1
 }
@@ -19,8 +19,16 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:3333/events/a472563a-2feb-4a17-b28a-72a9ce247d03
+GET http://localhost:3333/events/3ef1b82b-8453-43f6-9a3d-40aeff5393c8
 
 ###
 
 GET http://localhost:3333/attendees/3/badge
+
+###
+
+GET http://localhost:3333/attendees/3/check-in
+
+###
+
+GET http://localhost:3333/events/a472563a-2feb-4a17-b28a-72a9ce247d03/attendees?query=marcus
