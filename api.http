@@ -2,7 +2,25 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-  "title": "Unite Summit",
-  "details": "Um evento para quem é apaixonado por programação",
-  "maximumAttendees": 100
+  "title": "Novo Evento 2",
+  "details": null,
+  "maximumAttendees": 1
 }
+
+###
+
+POST http://localhost:3333/events/a472563a-2feb-4a17-b28a-72a9ce247d03/attendees
+Content-Type: application/json
+
+{
+  "name": "Marcus Gonçalves",
+  "email": "marcusvggoncalves2@gmail.com"
+}
+
+###
+
+GET http://localhost:3333/events/a472563a-2feb-4a17-b28a-72a9ce247d03
+
+###
+
+GET http://localhost:3333/attendees/3/badge
